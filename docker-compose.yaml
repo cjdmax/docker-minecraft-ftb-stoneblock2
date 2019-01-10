@@ -1,0 +1,11 @@
+version: '3.2'
+services:
+  stoneblock2:
+    image: stoneblock2:latest
+    restart: always
+    ports:
+    - "25565:25565"
+    volumes:
+      - type: bind
+        source: /docker/stoneblock2
+        target: /data
